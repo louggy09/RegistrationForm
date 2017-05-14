@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <script type="text/javascript" src="validator.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12">
+                <form  name="regForm"  method="post">
+                    <table >
+                        <tr>
+                            <td>First Name</td>
+                            <td><input type="text" name="firstname"  id="fname-id"></td>
+                            <td  id="fst-err"></td>
+                        </tr>
+                        <tr>
+                            <td>Last  Name</td>
+                            <td><input type="text" name="lastname" id="lname-id"></td>
+                             <td  id="lst-err"></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><input type="text" name="address" id="laddress-id"></td>
+                             <td  id="addr-err"></td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td><input type="text" name="address" id="lcity-id"></td>
+                             <td  id="city-err"></td>
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td><select name="state" id="lstate-id">
+                                    <option value="-1" selected>--select--</option>
+                                    <option>MD</option>
+                                    <option>VA</option>
+                                    <option>DC</option>
+                                    <option>FL</option>
+                                </select>
+                            </td>
+                             <td  id="state-err"></td>
+                        </tr>
+                        <tr>
+                            <td>Zip Code</td>
+                            <td><input type="text" name="zipcode" id="zipcode-id"></td>
+                            <td  id="zip-err"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td><input type="text" name="phone1" id="phone1-id" size="5">
+                                <input type="text" name="phone2" id="phone2-id" size="13">
+                            </td>
+                            <td  id="phone-err"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="email1" id="email1-id"></td>
+                            <td  id="email-err"></td>
+                        </tr>
+                        <tr>
+                            <td>Conf. Email</td>
+                            <td><input type="text" name="email2" id="email2-id"></td>
+                            <td  id="cemail-err"></td>
+                        </tr>
+                        <tr>
+                            <td>Meal Preference<br>Select one<br><br></td>
+                            <td>
+                                <input type="radio" name="meal" value="vegan" id="vegan-id">vegan<br>
+                                <input type="radio" name="meal" value="vegetarian" id="vegetarian-id">vegetarian<br>
+                                <input type="radio" name="meal" value="nonvegetarian" id="nonvegetarian-id">non-vegetarian<br>
+                            </td>
+                            <td  id="meal-err"></td>
+                        </tr>
+                        <tr>
+                            <td>Contact Method</td>
+                            <td>
+                                <input type="checkbox" name="phone-r" id="p-id"> Phone <input type="checkbox" name="email-r" id="e-id">Email<br>
+                                <input type="checkbox" name="mail-r" id="m-id"> Mail<input type="checkbox" name="linkedin-r" id="l-id">LinkedIn
+                            </td> 
+                            <td  id="contact-err"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Comments :</td>
+                            <td><Textarea rows="4" cols="20" id="comm-id"></Textarea></td>
+                            <td  id="comm-err"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="button" value="submit" name="submit" id="submit-1"></td>
+                            <td><input type="button" value="reset" name="reset" id="submit-2"></td>
+                            <td  id="butt-err"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
